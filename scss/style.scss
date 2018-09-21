@@ -22,7 +22,11 @@ body{
 	}
 	.violetBtn{
 		background-color: $violet;
-		color: $white; 
+		color: $white;
+	}
+	.blueBtn{
+		background-color: $blue;
+		color: $white;
 	}
 	.searchBar{
 		flex-grow:1;
@@ -53,7 +57,7 @@ body{
 			text-transform: uppercase;
 			color:$white;
 			background-color: $violet;
-			padding: 5px 10px; 
+			padding: 5px 10px;
 			border-radius: 5px;
 
 		}
