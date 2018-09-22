@@ -7,7 +7,7 @@ body {
   background-color: #ffffff; }
 
 .galleryFilters {
-  margin: 20px auto;
+  margin: 15px auto;
   align-content: center; }
   .galleryFilters .filterList {
     display: flex;
@@ -62,7 +62,7 @@ body {
 }
 .desc {
   padding: 2px;
-  height: 40px;
+  height: 30px;
   text-align: center;
   font-size: 15px;
   font-family: 'Quicksand', sans-serif;
