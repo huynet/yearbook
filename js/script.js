@@ -1,4 +1,4 @@
-$(window).bind("load", fucntion() {
+$(window).bind("load", function() {
 	$(document).ready(function(){
 		var filterizd = $(".filtr-container").filterizr({});
 
