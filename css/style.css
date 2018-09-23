@@ -1,3 +1,12 @@
+::selection {
+  color: #ffffff;
+  background: #67e194; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: #ffffff;
+  background: #67e194; /* Gecko Browsers */
+}
+
 @font-face {
   font-family: 'medium-content-serif-font';
   font-weight: 400;
@@ -19,10 +28,10 @@ body {
       margin-right: 10px;
       margin-bottom: 10px;}
       .galleryFilters .filterList .filterListItem.active {
-        background-color: #9517c3; }
+        background-color: #67e194; }
         .galleryFilters .filterList .filterListItem.blueBtn.active {
-          background-color: rgb(100,100,109);
-          border-color: rgb(100,100,109);
+          background-color: rgb(76,217,100);
+          border-color: rgb(76,217,100);
           border-width: 1px;}
         .galleryFilters .filterList .filterListItem.anhBtn.active {
           background-color: rgb(255,59,48);
@@ -67,8 +76,8 @@ body {
           .galleryFilters .filterList .filterListItem.phapBtn:hover {
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.15);}
         .galleryFilters .filterList .filterListItem.sinhBtn.active {
-          background-color: rgb(76,217,100);
-          border-color: rgb(76,217,100);
+          background-color: #67e194;
+          border-color: #67e194;
           color: #ffffff;
           border-width: 1px;}
           .galleryFilters .filterList .filterListItem.sinhBtn:hover {
@@ -113,12 +122,12 @@ body {
   .galleryFilters .violetBtn {
     font-size: 14px;
     font-family: sfcompact;
-    background-color: #610f7f;
+    background-color: #a4b0bf;
     border-radius: 3px;
     color: #ffffff; }
 
   .galleryFilters .blueBtn {
-    background-color: #008489;
+    background-color: #bfc6d2;
     color: #ffffff;}
 
   .galleryFilters .anhBtn {
@@ -228,7 +237,7 @@ body {
   height: 30px;
   text-align: center;
   font-size: 15px;
-  color: #484848;
+  color: #6c757d;
   font-family: sfcompact;
   margin-top: 5px;
 }
@@ -236,11 +245,15 @@ body {
 .header {
   margin-top: 15px;
   margin-bottom: 15px;
-  border-radius: 5px;
   max-width: 100%;
   border-radius: 3px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
 }
 
 .searchBox {
@@ -259,10 +272,26 @@ body {
 }
 
 .headerText {
-  font-size: 36px;
-  color: #484848;
+  padding-top: 5px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  color: #6c757d;
+  height: 10%;
+  width: 50%;
+  font-size: 42px;
   font-family: sfcompact;
   text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gifBackground {
+  width: 100%;
+  height: auto;
 }
 
 

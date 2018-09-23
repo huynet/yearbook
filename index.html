@@ -12,73 +12,76 @@
       font-family: sfcompact;
       src: url(Roboto-Medium.ttf);
   }
+
   @font-face {
-      font-family: marat;
-      src: url(marat-sans-400-normal.woff);
+      font-family: lala;
+      src: url(HammersmithOne-Regular.ttf);
+  }
+
+    * {
+   margin: 0;
+   padding: 0;
+  }
+  .imgbox {
+   display: grid;
+   height: 100%;
+  }
+  .center-fit {
+   max-width: 100%;
+   /* min-height: 100vh; */
+   margin: auto;
+   position: center;
   }
   </style>
 </head>
 <body>
+  <div class="imgbox">
+    <img class="center-fit" src="mappy.png">
+  </div>
 
+  <div class="headerText">
+    <text>The Digital Yearbook Project.</text>
+  </div>
+
+  <div class="header">
+    <div class="searchBox">
+      <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
+        <input type="text" placeholder="Look for you and your homies." class="searchBar form-control" name="search" data-search>
+      </div>
+    </div>
+    <hr>
+    <div class="filterBox">
+      <div class="textDiv">
+        <text class="text">EXPLORE YEARBOOK</text>
+      </div>
+      <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
+        <ul class="list-inline filterList">
+          <li class="filterListItem btn blueBtn" data-filter="all">All</li>
+          <li class="filterListItem btn blueBtn" data-shuffle>Shuffle</button>
+          <li class="filterListItem btn sinhBtn" data-filter="anh1">Anh 1</li>
+          <li class="filterListItem btn sinhBtn" data-filter="anh2">Anh 2</li>
+          <li class="filterListItem btn sinhBtn" data-filter="dia">Địa</li>
+          <li class="filterListItem btn sinhBtn" data-filter="hoa1">Hoá 1</li>
+          <li class="filterListItem btn sinhBtn" data-filter="hoa2">Hoá 2</li>
+          <li class="filterListItem btn sinhBtn" data-filter="ly1">Lý 1</li>
+          <li class="filterListItem btn sinhBtn" data-filter="ly2">Lý 2</li>
+          <li class="filterListItem btn sinhBtn" data-filter="nga">Nga</li>
+          <li class="filterListItem btn sinhBtn" data-filter="phap1">Pháp 1</li>
+          <li class="filterListItem btn sinhBtn" data-filter="phap2">Pháp 2</li>
+          <li class="filterListItem btn sinhBtn" data-filter="sinh">Sinh</li>
+          <li class="filterListItem btn sinhBtn" data-filter="su">Sử</li>
+          <li class="filterListItem btn sinhBtn" data-filter="tin">Tin</li>
+          <li class="filterListItem btn sinhBtn" data-filter="toan1">Toán 1</li>
+          <li class="filterListItem btn sinhBtn" data-filter="toan2">Toán 2</li>
+          <li class="filterListItem btn sinhBtn" data-filter="trung">Trung</li>
+          <li class="filterListItem btn sinhBtn" data-filter="van">Văn</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 	<div class="container">
-		<!-- <div class="row">
-			<div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
-				<ul class="list-inline filterList">
-					<li class="filterListItem btn violetBtn" data-filter="all">ALL</li>
-					<li class="filterListItem btn violetBtn" data-filter="animals">ANIMALS</li>
-					<li class="filterListItem btn violetBtn" data-filter="nature">NATURE</li>
-					<li class="filterListItem btn violetBtn" data-filter="places">PLACES</li>
-          <li class="filterListItem btn violetBtn" data-filter="huy">HUY</li>
-          <li class="filterListItem btn violetBtn" data-filter="hoa">CHEM</li>
-          <li class="filterListItem btn blueBtn" data-shuffle>SHUFFLE</li>
-				</ul>
-			</div>
-      <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
-        <input type="text" placeholder="Search for our friends" class="searchBar form-control" name="search" data-search>
-      </div>
-		</div> -->
 
-    <!-- abnbdemo -->
-    <div class="headerText">
-      <text>The Yearbook Project</text>
-    </div>
-    <div class="header">
-      <div class="searchBox">
-        <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
-          <input type="text" placeholder="Search for our friends. Please refresh if you experience performance issue." class="searchBar form-control" name="search" data-search>
-        </div>
-      </div>
-      <hr>
-      <div class="filterBox">
-        <div class="textDiv">
-          <text class="text">EXPLORE YEARBOOK</text>
-        </div>
-        <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
-          <ul class="list-inline filterList">
-            <li class="filterListItem btn violetBtn" data-filter="all">All</li>
-            <li class="filterListItem btn blueBtn" data-shuffle>Shuffle</button>
-            <li class="filterListItem btn anhBtn" data-filter="anh1">Anh 1</li>
-            <li class="filterListItem btn anhBtn" data-filter="anh2">Anh 2</li>
-            <li class="filterListItem btn diaBtn" data-filter="dia">Địa</li>
-            <li class="filterListItem btn hoaBtn" data-filter="hoa1">Hoá 1</li>
-            <li class="filterListItem btn hoaBtn" data-filter="hoa2">Hoá 2</li>
-            <li class="filterListItem btn lyBtn" data-filter="ly1">Lý 1</li>
-            <li class="filterListItem btn lyBtn" data-filter="ly2">Lý 2</li>
-            <li class="filterListItem btn ngaBtn" data-filter="nga">Nga</li>
-            <li class="filterListItem btn phapBtn" data-filter="phap1">Pháp 1</li>
-            <li class="filterListItem btn phapBtn" data-filter="phap2">Pháp 2</li>
-            <li class="filterListItem btn sinhBtn" data-filter="sinh">Sinh</li>
-            <li class="filterListItem btn suBtn" data-filter="su">Sử</li>
-            <li class="filterListItem btn tinBtn" data-filter="tin">Tin</li>
-            <li class="filterListItem btn toanBtn" data-filter="toan1">Toán 1</li>
-            <li class="filterListItem btn toanBtn" data-filter="toan2">Toán 2</li>
-            <li class="filterListItem btn trungBtn" data-filter="trung">Trung</li>
-            <li class="filterListItem btn vanBtn" data-filter="van">Văn</li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <!-- abnbdemo -->
 
 		<div class="row filtr-container galleryContainer">
