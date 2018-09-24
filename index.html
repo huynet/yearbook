@@ -13,86 +13,206 @@
       src: url(Roboto-Medium.ttf);
   }
 
-  @font-face {
-      font-family: lala;
-      src: url(HammersmithOne-Regular.ttf);
+  @@font-face {
+    font-family: circular;
+    src: url(Circular.otf);
   }
 
     * {
    margin: 0;
    padding: 0;
   }
+  .container {
+    margin-top: 40px;
+  }
   .imgbox {
    display: grid;
-   height: 500px;;
+   height: 500px;
+   z-index: -1;
+   width: 100%;
+   overflow: hidden;
+  }
+  .imgbox > img {
+    margin: 0 auto;
+    display: block;
+    max-width: inherit;
+  }
+  .top-foto {
+    display: grid;
+    height: 500px;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+  }
+  .top-foto > img {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
   }
   .center-fit {
-   width: 100%;
-   height: 500px;
-   /* min-height: 100vh; */
-   /* margin: auto;
-   position: center; */
+    margin: 0 auto;
+    display: block;
+    max-width: inherit;
+    position: center;
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+  }
+
+  #myVideo {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+  }
+
+  .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      height: 100%;
+      padding-top: 20%;
+  }
+
+  #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  #myBtn:hover {
+      background: #ddd;
+      color: black;
+  }
+
+  .headerFun {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  .bttn {
+      border: none;
+      background-color: inherit;
+      padding: 50px 100px;
+      font-size: 20px;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: sfcompact;
+  }
+  .video-container {
+    position: relative;
+  }
+  video {
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .overlay-desc {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .center-box{
+    margin-bottom: 50px;
+  }
+  h1 {
+    color: white;
+    font-family: circular, sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  a {
+    color: #ffffff;
+  }
+
+  a:hover {
+    color: #ffffff;
+    background-color: rgb(255, 45, 85);
+    text-decoration: none;
   }
 
   </style>
 </head>
 <body>
-  <div class="imgbox">
-    <img class="center-fit" src="mappy.png">
-  </div>
 
-  <div class="headerContainer">
-    <text class="headerText">The Digital Yearbook Project.</text>
-  </div>
+  <div class="video-container">
+	   <video autoplay>
+		     <source src="vid.mp4" type="video/mp4">
+		     Your browser does not support the video tag.
+	   </video>
+     <div class="overlay-desc">
+       <div class="center-box">
+          <h1><a href="#searchSection">Search.</a></h1>
+          <h1><a href="https://www.facebook.com/madein12.1518/">Relive.</a></h1>
+          <h1><a href="https://github.com/huynet/yearbook">Explore.</a></h1>
+       </div>
+     </div>
+	</div>
 
-  <div class="header">
-    <div class="searchBox">
-      <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
-        <input type="text" placeholder="Search for you and your homies." class="searchBar form-control" name="search" data-search>
-      </div>
-    </div>
-    <hr>
-    <div class="filterBox">
-      <div class="textDiv">
-        <text class="text">EXPLORE YEARBOOK</text>
-      </div>
-      <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
-        <ul class="list-inline filterList">
-          <li class="filterListItem btn blueBtn" data-filter="all">All</li>
-          <li class="filterListItem btn blueBtn" data-shuffle>Shuffle</button>
-          <li class="filterListItem btn sinhBtn" data-filter="anh1">Anh 1</li>
-          <li class="filterListItem btn sinhBtn" data-filter="anh2">Anh 2</li>
-          <li class="filterListItem btn sinhBtn" data-filter="dia">Địa</li>
-          <li class="filterListItem btn sinhBtn" data-filter="hoa1">Hoá 1</li>
-          <li class="filterListItem btn sinhBtn" data-filter="hoa2">Hoá 2</li>
-          <li class="filterListItem btn sinhBtn" data-filter="ly1">Lý 1</li>
-          <li class="filterListItem btn sinhBtn" data-filter="ly2">Lý 2</li>
-          <li class="filterListItem btn sinhBtn" data-filter="nga">Nga</li>
-          <li class="filterListItem btn sinhBtn" data-filter="phap1">Pháp 1</li>
-          <li class="filterListItem btn sinhBtn" data-filter="phap2">Pháp 2</li>
-          <li class="filterListItem btn sinhBtn" data-filter="sinh">Sinh</li>
-          <li class="filterListItem btn sinhBtn" data-filter="su">Sử</li>
-          <li class="filterListItem btn sinhBtn" data-filter="tin">Tin</li>
-          <li class="filterListItem btn sinhBtn" data-filter="toan1">Toán 1</li>
-          <li class="filterListItem btn sinhBtn" data-filter="toan2">Toán 2</li>
-          <li class="filterListItem btn sinhBtn" data-filter="trung">Trung</li>
-          <li class="filterListItem btn sinhBtn" data-filter="van">Văn</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
+  <div id="searchSection"></div>
 	<div class="container">
-
-    <!-- abnbdemo -->
-
+    <div class="header">
+      <div class="searchBox">
+        <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
+          <input type="text" placeholder="Search for you and your homies." class="searchBar form-control" name="search" data-search>
+        </div>
+      </div>
+      <hr>
+      <div class="filterBox">
+        <div class="textDiv">
+          <text class="text">EXPLORE YEARBOOK</text>
+        </div>
+        <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
+          <ul class="list-inline filterList">
+            <li class="filterListItem btn blueBtn" data-filter="all">All</li>
+            <li class="filterListItem btn blueBtn" data-shuffle>Shuffle</button>
+            <li class="filterListItem btn sinhBtn" data-filter="anh1">Anh 1</li>
+            <li class="filterListItem btn sinhBtn" data-filter="anh2">Anh 2</li>
+            <li class="filterListItem btn sinhBtn" data-filter="dia">Địa</li>
+            <li class="filterListItem btn sinhBtn" data-filter="hoa1">Hoá 1</li>
+            <li class="filterListItem btn sinhBtn" data-filter="hoa2">Hoá 2</li>
+            <li class="filterListItem btn sinhBtn" data-filter="ly1">Lý 1</li>
+            <li class="filterListItem btn sinhBtn" data-filter="ly2">Lý 2</li>
+            <li class="filterListItem btn sinhBtn" data-filter="nga">Nga</li>
+            <li class="filterListItem btn sinhBtn" data-filter="phap1">Pháp 1</li>
+            <li class="filterListItem btn sinhBtn" data-filter="phap2">Pháp 2</li>
+            <li class="filterListItem btn sinhBtn" data-filter="sinh">Sinh</li>
+            <li class="filterListItem btn sinhBtn" data-filter="su">Sử</li>
+            <li class="filterListItem btn sinhBtn" data-filter="tin">Tin</li>
+            <li class="filterListItem btn sinhBtn" data-filter="toan1">Toán 1</li>
+            <li class="filterListItem btn sinhBtn" data-filter="toan2">Toán 2</li>
+            <li class="filterListItem btn sinhBtn" data-filter="trung">Trung</li>
+            <li class="filterListItem btn sinhBtn" data-filter="van">Văn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 		<div class="row filtr-container galleryContainer">
-			<!-- item -->
-			<div class="gallerio filtr-item thumbnail" data-category="all,animals" data-sort="cat">
-				<img src="images/animals/animals (1).jpg" alt="">
-				<div class="desc">Cat</div>
-			</div>
-			<!-- item -->
 
       <!-- anh1 -->
 			<div class="gallerio filtr-item thumbnail" data-category="all,anh1" data-sort="anh1">
@@ -2838,7 +2958,6 @@
 			</div>
 			</div>
 		</div>
-	</div>
 
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
