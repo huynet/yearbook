@@ -30,8 +30,8 @@ body {
       .galleryFilters .filterList .filterListItem.active {
         background-color: #67e194; }
         .galleryFilters .filterList .filterListItem.blueBtn.active {
-          background-color: rgb(76,217,100);
-          border-color: rgb(76,217,100);
+          background-color: rgb(255,59,48);
+          border-color: rgb(255,59,48);
           border-width: 1px;}
         .galleryFilters .filterList .filterListItem.anhBtn.active {
           background-color: rgb(255,59,48);
@@ -200,7 +200,6 @@ body {
     color: #333333;
     border: none;
     width: auto;}
-    /* border-color: #610f7f; } */
     .galleryFilters .searchBar:focus {
       outline: none;
       box-shadow: none; }
@@ -218,14 +217,12 @@ body {
 
   div.gallerio {
       margin: 5px;
-      /* border: 1px solid #ccc; */
       float: left;
       width: 180px;
       padding: 15px;
   }
 
 .gallerio:hover {
-  /* border: 5px solid #777; */
   background: rgb(214, 214, 214, 0.7);
 }
 .gallerio img {

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>The Yearbook Project</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
@@ -25,39 +25,6 @@
   .container {
     margin-top: 40px;
   }
-  .imgbox {
-   display: grid;
-   height: 500px;
-   z-index: -1;
-   width: 100%;
-   overflow: hidden;
-  }
-  .imgbox > img {
-    margin: 0 auto;
-    display: block;
-    max-width: inherit;
-  }
-  .top-foto {
-    display: grid;
-    height: 500px;
-    z-index: -1;
-    width: 100%;
-    overflow: hidden;
-  }
-  .top-foto > img {
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-  }
-  .center-fit {
-    margin: 0 auto;
-    display: block;
-    max-width: inherit;
-    position: center;
-  }
-
   * {
       box-sizing: border-box;
   }
@@ -84,37 +51,6 @@
       width: 100%;
       height: 100%;
       padding-top: 20%;
-  }
-
-  #myBtn {
-      width: 200px;
-      font-size: 18px;
-      padding: 10px;
-      border: none;
-      background: #000;
-      color: #fff;
-      cursor: pointer;
-  }
-
-  #myBtn:hover {
-      background: #ddd;
-      color: black;
-  }
-
-  .headerFun {
-    margin-top: 100px;
-    margin-left: 100px;
-  }
-
-  .bttn {
-      border: none;
-      background-color: inherit;
-      padding: 50px 100px;
-      font-size: 20px;
-      color: #ffffff;
-      cursor: pointer;
-      display: inline-block;
-      font-family: sfcompact;
   }
   .video-container {
     position: relative;
@@ -162,7 +98,7 @@
 
   <div class="video-container">
 	   <video autoplay>
-		     <source src="vid.mp4" type="video/mp4">
+		     <source src="vid.m4v" type="video/mp4">
 		     Your browser does not support the video tag.
 	   </video>
      <div class="overlay-desc">
@@ -191,22 +127,22 @@
           <ul class="list-inline filterList">
             <li class="filterListItem btn blueBtn" data-filter="all">All</li>
             <li class="filterListItem btn blueBtn" data-shuffle>Shuffle</button>
-            <li class="filterListItem btn sinhBtn" data-filter="anh1">Anh 1</li>
-            <li class="filterListItem btn sinhBtn" data-filter="anh2">Anh 2</li>
-            <li class="filterListItem btn sinhBtn" data-filter="dia">Địa</li>
-            <li class="filterListItem btn sinhBtn" data-filter="hoa1">Hoá 1</li>
-            <li class="filterListItem btn sinhBtn" data-filter="hoa2">Hoá 2</li>
-            <li class="filterListItem btn sinhBtn" data-filter="ly1">Lý 1</li>
-            <li class="filterListItem btn sinhBtn" data-filter="ly2">Lý 2</li>
-            <li class="filterListItem btn sinhBtn" data-filter="nga">Nga</li>
-            <li class="filterListItem btn sinhBtn" data-filter="phap1">Pháp 1</li>
-            <li class="filterListItem btn sinhBtn" data-filter="phap2">Pháp 2</li>
-            <li class="filterListItem btn sinhBtn" data-filter="sinh">Sinh</li>
-            <li class="filterListItem btn sinhBtn" data-filter="su">Sử</li>
-            <li class="filterListItem btn sinhBtn" data-filter="tin">Tin</li>
-            <li class="filterListItem btn sinhBtn" data-filter="toan1">Toán 1</li>
-            <li class="filterListItem btn sinhBtn" data-filter="toan2">Toán 2</li>
-            <li class="filterListItem btn sinhBtn" data-filter="trung">Trung</li>
+            <li class="filterListItem btn vanBtn" data-filter="anh1">Anh 1</li>
+            <li class="filterListItem btn vanBtn" data-filter="anh2">Anh 2</li>
+            <li class="filterListItem btn vanBtn" data-filter="dia">Địa</li>
+            <li class="filterListItem btn vanBtn" data-filter="hoa1">Hoá 1</li>
+            <li class="filterListItem btn vanBtn" data-filter="hoa2">Hoá 2</li>
+            <li class="filterListItem btn vanBtn" data-filter="ly1">Lý 1</li>
+            <li class="filterListItem btn vanBtn" data-filter="ly2">Lý 2</li>
+            <li class="filterListItem btn vanBtn" data-filter="nga">Nga</li>
+            <li class="filterListItem btn vanBtn" data-filter="phap1">Pháp 1</li>
+            <li class="filterListItem btn vanBtn" data-filter="phap2">Pháp 2</li>
+            <li class="filterListItem btn vanBtn" data-filter="sinh">Sinh</li>
+            <li class="filterListItem btn vanBtn" data-filter="su">Sử</li>
+            <li class="filterListItem btn vanBtn" data-filter="tin">Tin</li>
+            <li class="filterListItem btn vanBtn" data-filter="toan1">Toán 1</li>
+            <li class="filterListItem btn vanBtn" data-filter="toan2">Toán 2</li>
+            <li class="filterListItem btn vanBtn" data-filter="trung">Trung</li>
             <li class="filterListItem btn sinhBtn" data-filter="van">Văn</li>
           </ul>
         </div>
@@ -1978,11 +1914,6 @@
 			</div>
 
 			<div class="gallerio filtr-item thumbnail" data-category="all,sinh" data-sort="sinh">
-				<img src="images/sinh/09 - Nguyễn Tuệ Minh Châu.jpg" alt="">
-				<div class="desc">Nguyễn Tuệ Minh Châu</div>
-			</div>
-
-			<div class="gallerio filtr-item thumbnail" data-category="all,sinh" data-sort="sinh">
 				<img src="images/sinh/08 - Nguyễn Vũ Bảo Châu.jpg" alt="">
 				<div class="desc">Nguyễn Vũ Bảo Châu</div>
 			</div>
@@ -2738,7 +2669,7 @@
 
 			<div class="gallerio filtr-item thumbnail" data-category="all,toan2" data-sort="toan2">
 				<img src="images/toan2/19 - Lê Đàng Anh Quân.jpg" alt="">
-				<div class="desc">Lê Đàng Anh Quân</div>
+				<div class="desc">Lê Đăng Anh Quân</div>
 			</div>
 
 			<div class="gallerio filtr-item thumbnail" data-category="all,toan2" data-sort="toan2">
@@ -2775,6 +2706,167 @@
 				<img src="images/toan2/26 - Nguyễn Hoàng Việt.jpg" alt="">
 				<div class="desc">Nguyễn Hoàng Việt</div>
 			</div>
+
+      <!-- trung -->
+      <div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/01 - Kiều Minh Anh.JPG" alt="">
+      				<div class="desc">Kiều Minh Anh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/02 - Nguyễn Nguyệt Anh.JPG" alt="">
+      				<div class="desc">Nguyễn Nguyệt Anh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/03 - Nguyễn Như Phương Anh.jpg" alt="">
+      				<div class="desc">Nguyễn Như Phương Anh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/04 - Nguyễn Quang Anh.jpg" alt="">
+      				<div class="desc">Nguyễn Quang Anh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/05 - Nguyễn Thị Quỳnh Anh.JPG" alt="">
+      				<div class="desc">Nguyễn Thị Quỳnh Anh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/06 - Trần Bảo Châu.JPG" alt="">
+      				<div class="desc">Trần Bảo Châu</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/07 - Nguyễn Minh Châu.JPG" alt="">
+      				<div class="desc">Nguyễn Minh Châu</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/09 - Trần Anh Đức.jpg" alt="">
+      				<div class="desc">Trần Anh Đức</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/10 - Hoàng Hương Giang.JPG" alt="">
+      				<div class="desc">Hoàng Hương Giang</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/11 - Phí Hồng Hà.jpg" alt="">
+      				<div class="desc">Phí Hồng Hà</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/12 - Hà Phạm Lộc Hân.JPG" alt="">
+      				<div class="desc">Hà Phạm Lộc Hân</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/13 - Bùi Mạnh Hùng.JPG" alt="">
+      				<div class="desc">Bùi Mạnh Hùng</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/14 - Lương Khánh Huyền.JPG" alt="">
+      				<div class="desc">Lương Khánh Huyền</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/15 - Nguyễn Ngọc Khánh.JPG" alt="">
+      				<div class="desc">Nguyễn Ngọc Khánh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/16 - Lưu Vũ Minh Khuê.JPG" alt="">
+      				<div class="desc">Lưu Vũ Minh Khuê</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/17 - Nguyễn Thuý Lan.JPG" alt="">
+      				<div class="desc">Nguyễn Thuý Lan</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/18 - Tăng Trần Diệu Linh.jpg" alt="">
+      				<div class="desc">Tăng Trần Diệu Linh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/19 - Lê Nguyệt Linh.JPG" alt="">
+      				<div class="desc">Lê Nguyệt Linh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/20 - Giang Phương Linh.JPG" alt="">
+      				<div class="desc">Giang Phương Linh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/21 - Nguyễn Thảo Linh.JPG" alt="">
+      				<div class="desc">Nguyễn Thảo Linh</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/22 - Lê Ngọc Mai.JPG" alt="">
+      				<div class="desc">Lê Ngọc Mai</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/23 - Trần Trà My.JPG" alt="">
+      				<div class="desc">Trần Trà My</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/24 - Trần Trà My.JPG" alt="">
+      				<div class="desc">Trần Trà My</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/25 - Trần Ngọc Lam My.JPG" alt="">
+      				<div class="desc">Trần Ngọc Lam My</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/26 - Đặng Thanh Nga.JPG" alt="">
+      				<div class="desc">Đặng Thanh Nga</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/27 - Trần Hồng Phúc.JPG" alt="">
+      				<div class="desc">Trần Hồng Phúc</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/28 - Vũ Thu Phương.JPG" alt="">
+      				<div class="desc">Vũ Thu Phương</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/29 - Bùi Phương Thảo.JPG" alt="">
+      				<div class="desc">Bùi Phương Thảo</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/30 - Phạm Nguyễn Hương Thảo.jpg" alt="">
+      				<div class="desc">Phạm Nguyễn Hương Thảo</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/31 - Trần Thuỷ Tiên.JPG" alt="">
+      				<div class="desc">Trần Thuỷ Tiên</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/32 - Vũ Hoàng Việt.JPG" alt="">
+      				<div class="desc">Vũ Hoàng Việt</div>
+      			</div>
+
+      			<div class="gallerio filtr-item thumbnail" data-category="all,trung" data-sort="trung">
+      				<img src="images/trung/33 - Nguyễn Thảo Vy.JPG" alt="">
+      				<div class="desc">Nguyễn Thảo Vy</div>
+      			</div>
 
       <!-- van -->
       <div class="gallerio filtr-item thumbnail" data-category="all,van" data-sort="van">
